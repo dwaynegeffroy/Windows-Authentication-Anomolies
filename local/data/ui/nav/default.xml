@@ -1,0 +1,14 @@
+<nav search_view="search" color="22a0ec">
+  <view name="search" default='true' />
+  <collection label="analytics">
+  	<view name="analytics" />
+  	<view name="process_analysis" />
+    <view name="overview" />
+  </collection>
+  <collection label="setup">
+  	<view name="info" />
+  	<view name="add" />
+    <view name="delete" />
+  	<view name="document" />
+  </collection>
+</nav>

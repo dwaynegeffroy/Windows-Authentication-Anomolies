@@ -1,0 +1,73 @@
+<form>
+  <label>Analysis</label>
+  <description>Analyse what processes you want to add or remove based on your environment</description>
+  <fieldset submitButton="true">
+    <input type="time" token="time">
+      <label>Time</label>
+      <default>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+    <input type="text" token="process">
+      <label>Process</label>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <title>Process Analysis(Full Scoring)</title>
+      <table>
+        <search>
+          <query>index=* sourcetype="sysmon" process_exec=$process$ OR parent_process_exec=$process$
+| fillnull process_exec process_path process parent_process_exec parent_process_path src user _time 
+| stats count by process_exec process_path process parent_process_exec parent_process_path src user _time 
+| lookup process_detections process_exec process_path process parent_process_exec parent_process_path user
+| rex field=process_name "^(?&lt;single&gt;\w)\.\w+$$"
+| eval analytic_id=if(isnull(single),analytic_id,53), score=if(isnull(single),score,50)
+| search score=*
+| eval ascore=mvzip(analytic_id, score,"|")
+| stats count by process_exec process_path process parent_process_exec parent_process_path src user _time ascore
+| mvexpand ascore
+| rex field=ascore "(?&lt;analytic_id&gt;[^\|]+)\|(?&lt;score&gt;[^\|]+)"</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Process Analysis(Process Only)</title>
+      <table>
+        <search>
+          <query>index=* sourcetype="sysmon" process_exec=$process$ OR parent_process_exec=$process$
+| fillnull process_exec process_path process parent_process_exec parent_process_path src user _time 
+| stats count by process_exec process_path process parent_process_exec parent_process_path src user _time 
+| lookup process_detections process_exec process_path process parent_process_exec parent_process_path user
+| rex field=process_name "^(?&lt;single&gt;\w)\.\w+$$"
+| eval analytic_id=if(isnull(single),analytic_id,53), score=if(isnull(single),score,50)
+| search score=*
+          </query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</form>

@@ -1,0 +1,34 @@
+<dashboard>
+  <label>Analytics</label>
+  <description>Find hits from process indicators</description>
+  <row>
+    <panel>
+      <title>Process Hits - Last 7 days</title>
+      <table>
+        <search>
+          <query>index=* sourcetype="sysmon" 
+| fillnull process_exec process_path process parent_process_exec parent_process_path src user _time 
+| stats count by process_exec process_path process parent_process_exec parent_process_path src user _time 
+| lookup process_detections process_exec process_path process parent_process_exec parent_process_path user
+| rex field=process_name "^(?&lt;single&gt;\w)\.\w+$$"
+| eval analytic_id=if(isnull(single),analytic_id,53), score=if(isnull(single),score,50)
+| search score=*
+| eval ascore=mvzip(analytic_id, score,"|")
+| stats count by process_exec process_path process parent_process_exec parent_process_path src user _time ascore
+| mvexpand ascore
+| rex field=ascore "(?&lt;analytic_id&gt;[^\|]+)\|(?&lt;score&gt;[^\|]+)"</query>
+          <earliest>-7d@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

@@ -1,0 +1,53 @@
+<dashboard>
+  <label>Overview</label>
+  <fieldset submitButton="true" autoRun="false">
+    <input type="text" token="list_process">
+      <label>Process</label>
+      <default>*</default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <title>Process List</title>
+      <table>
+        <search>
+          <query>|inputlookup process_detections | search process_exec="$list_process$" OR process_path="$list_process$" OR process="$list_process$" OR parent_process_exec="$list_process$" OR parent_process_path="$list_process$" 
+          </query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+      </table>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>index=* sourcetype="sysmon" 
+| fillnull process_exec process_path process parent_process_exec parent_process_path src user _time 
+| stats count by process_exec process_path process parent_process_exec parent_process_path src user _time 
+| lookup process_detections process_exec process_path process parent_process_exec parent_process_path user
+| rex field=process_name "^(?&lt;single&gt;\w)\.\w+$$"
+| eval analytic_id=if(isnull(single),analytic_id,53), score=if(isnull(single),score,50)
+| search score=*
+| eval ascore=mvzip(analytic_id, score,"|")
+| stats count by process_exec process_path process parent_process_exec parent_process_path src user _time ascore
+| mvexpand ascore
+| rex field=ascore "(?&lt;analytic_id&gt;[^\|]+)\|(?&lt;score&gt;[^\|]+)"</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

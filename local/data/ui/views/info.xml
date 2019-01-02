@@ -1,0 +1,32 @@
+<dashboard>
+  <label>Info\Setup</label>
+  <row>
+    <panel>
+      <html>
+	        	<h2>Using the Process Detection lookup</h2>
+
+
+	        	<html>
+    	  <h3>Perform analytics</h3>
+Find out what kind of tactics and techniques are being used in by monitoring process details.
+<br/>
+<ol>
+<li>Get the data in. Windows process data can be ingested by either sysmon or windows app, just ensure the data is aligned to the <a href="https://docs.splunk.com/Documentation/CIM/latest/User/Endpoint">endpoint cim</a>
+            </li>
+<li>
+            Running the <a href="analytics" target="_blank">analysis</a> page will show you all the hits in your environment
+            </li>
+<li>Run  <a href="process_analysis" target="_blank">process analysis</a> to analyse how any processes fit into your ecosystem.</li>
+<li>
+             Check the  <a href="overview" target="_blank">overview</a> to get further insights into your environment
+            </li>
+<li>
+             Add or remove analytics with either the <a href="delete" target="_blank">"delete"</a> and <a href="add" target="_blank">"add"</a> pages or use a lookup management tool (Optional)</li>
+</ol>
+</html>
+       <h3>Tips</h3>
+             <p>You may need to modify some of the analytics once you get an understanding of your environment for example file transfer programs may need exemptions based on the products you use.</p>
+			</html>
+    </panel>
+  </row>
+</dashboard>
