@@ -6,17 +6,18 @@
       <title>Process Hits - Last 7 days</title>
       <table>
         <search>
-          <query>index=* sourcetype="sysmon" 
-| fillnull process_exec process_path process parent_process_exec parent_process_path src user _time 
-| stats count by process_exec process_path process parent_process_exec parent_process_path src user _time 
+          <query>| tstats count from datamodel=Endpoint.Processes by Processes.process_exec Processes.process_path Processes.process Processes.parent_process_exec Processes.parent_process_path Processes.dest Processes.user _time summariesonly=false
+| rename Processes.* as *
 | lookup process_detections process_exec process_path process parent_process_exec parent_process_path user
-| rex field=process_name "^(?&lt;single&gt;\w)\.\w+$$"
+| rex field=process_exec "^(?&lt;single&gt;\w)\.\w+$"
 | eval analytic_id=if(isnull(single),analytic_id,53), score=if(isnull(single),score,50)
-| search score=*
-| eval ascore=mvzip(analytic_id, score,"|")
-| stats count by process_exec process_path process parent_process_exec parent_process_path src user _time ascore
+| search score=* 
+| eval ascore=mvzip(analytic_id, score,"|") 
+| stats count by process_exec process_path process parent_process_exec parent_process_path dest user _time ascore
 | mvexpand ascore
-| rex field=ascore "(?&lt;analytic_id&gt;[^\|]+)\|(?&lt;score&gt;[^\|]+)"</query>
+| rex field=ascore "(?&lt;analytic_id&gt;[^\|]+)\|(?&lt;score&gt;[^\|]+)"
+| stats values(score) as score by process_exec process_path process parent_process_exec parent_process_path dest user _time analytic_id
+| search score!=0</query>
           <earliest>-7d@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
@@ -25,6 +26,7 @@
         <option name="dataOverlayMode">none</option>
         <option name="drilldown">none</option>
         <option name="percentagesRow">false</option>
+        <option name="refresh.display">progressbar</option>
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
         <option name="wrap">true</option>

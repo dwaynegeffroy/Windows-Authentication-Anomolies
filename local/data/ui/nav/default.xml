@@ -1,5 +1,6 @@
 <nav search_view="search" color="22a0ec">
   <view name="search" default='true' />
+  <view name="reports"/>
   <collection label="analytics">
   	<view name="analytics" />
   	<view name="process_analysis" />

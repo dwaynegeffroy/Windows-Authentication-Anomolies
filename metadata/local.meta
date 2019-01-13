@@ -8,7 +8,7 @@ modtime = 1545527696.425108400
 
 [nav/default]
 version = 7.1.3
-modtime = 1546237336.704214300
+modtime = 1546865542.257571300
 
 [lookups/process_detections.csv]
 access = read : [ * ], write : [ admin ]
@@ -43,15 +43,15 @@ modtime = 1546222976.161658200
 
 [views/analytics]
 version = 7.1.3
-modtime = 1546304229.340673700
+modtime = 1546866925.155005300
 
 [views/process_analysis]
 version = 7.1.3
-modtime = 1546309148.680767300
+modtime = 1546867373.610098400
 
 [views/overview]
 version = 7.1.3
-modtime = 1546336049.848400100
+modtime = 1546868007.238692000
 
 [views/delete]
 version = 7.1.3
