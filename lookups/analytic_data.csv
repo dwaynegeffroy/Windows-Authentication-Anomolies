@@ -38,7 +38,7 @@ analytic_id,title,description,attack_technique,attack_tactic,alert_quality,refer
 37,wbadmin to delete the backup catalog,wbadmin to delete the backup catalog,,"Defense Evasion, File Deletion",med,
 38,fsutil to delete the USN journal,fsutil to delete the USN journal,,"Defense Evasion, File Deletion",med,
 39,netsh.exe to backup, disable and restore firewall rules,netsh.exe to backup, disable and restore firewall rules,,"Defense Evasion,Disabling Security Tools",med,
-40,"searches files looking for the string \"password\"","searches files looking for the string \"password\"",, "Credential Access,Credentials in Files" ,med,
+40,"searches files looking for the string password","searches files looking for the string password",, "Credential Access,Credentials in Files" ,med,
 41,msiexec.exe to download an executable from a remote site over HTTP and run it,msiexec.exe to download an executable from a remote site over HTTP and run it.,,"Execution, Persistence",med,
 42,execution from the \"C:\Recycler\" and \"C:\$RECYCLE.BIN\" subdirectories,execution from the \"C:\Recycler\" and \"C:\$RECYCLE.BIN\" subdirectories,,"Hidden Files and Directories,Defense Evasion, Persistence"
 43,Suspicious XOR Encoded PowerShell Command Line,Detects suspicious powershell process which includes bxor command, alternatvide obfuscation method to b64 encoded commands.,t1086,"execution, obfiscation",med,https://github.com/Neo23x0/sigma/blob/master/rules/windows/process_creation/powershell_xor_commandline.yml
