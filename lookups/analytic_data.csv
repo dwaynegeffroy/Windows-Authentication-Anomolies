@@ -18,7 +18,7 @@ analytic_id,title,description,attack_technique,attack_tactic,alert_quality,refer
 17,Schtasks used for forcing a reboot,"ESCU - Schtasks used for forcing a reboot - Rule",,"Persistence, Execution",med,
 18,Suspicious Reg.exe Process,"ESCU - Suspicious Reg.exe Process - Rule",,"Defense Evasion, Modify Registry, Disabling Security Tools",med,
 19,System Processes Run From Unexpected Locations,ESCU - System Processes Run From Unexpected Locations - Rule,,"Defense Evasion, Masquerading",high,
-20,Detect Path Interception By Creation Of program.exe,Detect Path Interception By Creation Of program.exe,,"Privilege Escalation", "Persistence",med,
+20,Detect Path Interception By Creation Of program.exe,Detect Path Interception By Creation Of program.exe,,"Privilege Escalation,Persistence",med,
 21,Child Processes of Spoolsv.exe,ESCU - Child Processes of Spoolsv.exe - Rule,,"Privilege Escalation, Exploitation for Privilege Escalation",high,
 22,Hiding Files And Directories With Attrib.exe,Hiding Files And Directories With Attrib.exe,,"Defense Evasion, Persistence",low,
 23,Process Execution via WMI,Process Execution via WMI,,"Execution, Windows Management Instrumentation",med,
