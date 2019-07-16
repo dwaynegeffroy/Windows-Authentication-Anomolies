@@ -50,7 +50,7 @@ analytic_id,parent_process_path,parent_process_name,process_path,process_name,pr
 18,*,*,*,reg.exe,*,*,med,30
 19,*,*,*windows*syswow64*,*,*,*,high,0
 19,*,*,*windows*system32*,*,*,*,high,0
-19,*,*,*,arp.exe,*,*,high,0
+19,*,*,*,arp.exe,*,*,high,60
 19,*,*,*,adaptertroubleshooter.exe,*,*,high,60
 19,*,*,*,applicationframehost.exe,*,*,high,60
 19,*,*,*,atbroker.exe,*,*,high,60
