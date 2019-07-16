@@ -666,3 +666,4 @@ analytic_id,parent_process_path,parent_process_name,process_path,process_name,pr
 41,*,*,*,*,*msiexec.exe*http*,*,med,30
 42,*,*,*,*,*Recycle.Bin*,*,med,30
 42,*,*,*,*,*Recycler*,*,med,30
+43,*,*,*,*,* -bxor*,*,med,30
