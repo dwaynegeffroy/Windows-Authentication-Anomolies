@@ -1,4 +1,4 @@
-analytic_id,parent_process_path,parent_process_name,process_path,process_exec,process,user,severity,score
+analytic_id,parent_process_path,parent_process_name,process_path,process_name,process,user,severity,score
 1,*,*,*,sdelete.exe,*,*,high,60
 2,*,*,*,ftp.exe,*,*,med,30
 2,*,*,*,tftp.exe,*,*,med,30
