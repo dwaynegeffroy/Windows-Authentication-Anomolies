@@ -42,3 +42,8 @@ analytic_id,title,description,attack_technique,attack_tactic,alert_quality,refer
 41,msiexec.exe to download an executable from a remote site over HTTP and run it,msiexec.exe to download an executable from a remote site over HTTP and run it.,,"Execution, Persistence",med,
 42,execution from the C:\Recycler\ and C:\$RECYCLE.BIN\ subdirectories,execution from the C:\Recycler\ and C:\$RECYCLE.BIN\ subdirectories,,"Hidden Files and Directories,Defense Evasion, Persistence",med,
 43,Suspicious XOR Encoded PowerShell Command Line,"Detects suspicious powershell process which includes bxor command, alternatvide obfuscation method to b64 encoded commands.",t1086,"execution, obfiscation",med,https://github.com/Neo23x0/sigma/blob/master/rules/windows/process_creation/powershell_xor_commandline.yml
+44,APT29 Google Update Service Install,APT29 Google Update Service Install,"g0016,t1050",persistence,med,https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html
+45,APT29 Google Update Service Install,APT29 Google Update Service Install,"g0016,t1050",persistence,med,https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html
+46,APT29 Google Update Service Install,APT29 Google Update Service Install,"g0016,t1050",persistence,med,https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html
+47,APT29 Google Update Service Install,APT29 Google Update Service Install,"g0016,t1050",persistence,med,https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html
+48,APT29 Google Update Service Install,APT29 Google Update Service Install,"g0016,t1050",persistence,med,https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html
