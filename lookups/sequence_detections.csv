@@ -1,0 +1,10 @@
+analytic_id,parent_process_path,parent_process_name,process_path,process_name,process,user,severity,score
+s1,*,*,whoami.exe,*,*,*,1
+s1,*,*,hostname.exe,*,*,*,1
+s1,*,*,ipconfig.exe,*,*,*,1
+s1,*,*,net.exe,*,*,*,1
+s1,*,*,dir.exe,*,*,*,1
+s1,*,*,tasklist.exe,*,*,*,1
+s1,*,*,ver.exe,*,*,*,1
+s1,*,*,set.exe,*,*,*,1
+s1,*,*,reg.exe,*,*,*,1
