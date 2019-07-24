@@ -677,3 +677,5 @@ analytic_id,parent_process_path,parent_process_name,process_path,process_name,pr
 50,*,*,*,*,*powershell.exe mshta.exe http*,*,med,1
 51,*,*,*,*,*reg query 'HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default'*,*,med,1
 52,*,*,*,attrib.exe,*+h*,*,med,1
+52,*,cmd.exe,*,attrib.exe,*+h*cui*,*,med,0
+52,*,*,*,attrib.exe,*+h*desktop.ini*,*,med,0
