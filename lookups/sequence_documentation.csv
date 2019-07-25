@@ -1,2 +1,3 @@
 analytic_id,title,description,references
 s1,babyshark,detections from babyshark,https://unit42.paloaltonetworks.com/new-babyshark-malware-targets-u-s-national-security-think-tanks/
+s2,wannacry,wannacry detections,https://www.endgame.com/blog/technical-blog/wcrywanacry-ransomware-technical-analysis
