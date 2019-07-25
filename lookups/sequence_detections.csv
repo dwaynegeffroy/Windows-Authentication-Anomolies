@@ -8,3 +8,4 @@ s1,*,*,tasklist.exe,*,*,*,1
 s1,*,*,ver.exe,*,*,*,1
 s1,*,*,set.exe,*,*,*,1
 s1,*,*,reg.exe,*,*,*,1
+s2,*,*,attrib.exe,attrib +h,*,*,1
