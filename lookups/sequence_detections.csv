@@ -23,3 +23,6 @@ s3,*,explorer.exe,*,eventvwr.exe,*,*,1
 s3,*,eventvwr.exe,*,cmd.exe,*,*,1
 s3,*,*,*,schtasks.exe,schtasks.exe Create /F /TN "*" /TR * /SC minute *,*,1
 s3,*,*,*,schtasks.exe,schtasks.exe Create /F /TN "*" /TR * /SC minute *,*,1
+s4,*,*,*,rundll32.exe,rundll32*dllmain,*,1
+s4,*,rundll32.exe,*,explorer.exe,*,*,1
+s4,*,rundll32.exe,*,svchost.exe,*,*,1
