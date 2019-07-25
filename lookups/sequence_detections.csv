@@ -17,3 +17,9 @@ s2,*,*,*,vssadmin.exe,*vssadmin* delete shadows /all /quiet,*,1
 s2,*,*,*,WMIC.exe,*wmic*shadowcopy delete,*,1
 s2,*,*,*,reg.exe,*reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "svkdmrsrbncpu900" /t REG_SZ /d "\"C:\tasksche.exe\"" /f,*,1
 s2,*,*,*,taskkill.exe,taskkill.exe /f /im*,*,1
+s3,*,rundll32.exe,*,explorer.exe,*,*,1
+s3,*,rundll32.exe,*,schtasks.exe,*,*,1
+s3,*,explorer.exe,*,eventvwr.exe,*,*,1
+s3,*,eventvwr.exe,*,cmd.exe,*,*,1
+s3,*,*,*,schtasks.exe,schtasks.exe Create /F /TN "*" /TR * /SC minute *,*,1
+s3,*,*,*,schtasks.exe,schtasks.exe Create /F /TN "*" /TR * /SC minute *,*,1
