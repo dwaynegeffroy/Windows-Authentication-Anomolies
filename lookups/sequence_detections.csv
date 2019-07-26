@@ -26,3 +26,17 @@ s3,*,*,*,schtasks.exe,schtasks.exe Create /F /TN "*" /TR * /SC minute *,*,1
 s4,*,*,*,rundll32.exe,rundll32*dllmain,*,1
 s4,*,rundll32.exe,*,explorer.exe,*,*,1
 s4,*,rundll32.exe,*,svchost.exe,*,*,1
+s5,*,svchost.exe,*,iexplore.exe,*,*,0
+s5,*,explorer.exe,*,iexplore.exe,*,*,0
+s5,*,outlook.exe,*,iexplore.exe,*,*,0
+s5,*,iexplore.exe,*,iexplore.exe,*,*,0
+s5,*,*,*,iexplore.exe,*,*,1
+s5,*,iexplore.exe,*,services.exe,*,*,1
+s5,*,iexplore.exe,*,winlogon.exe,*,*,1
+s5,*,iexplore.exe,*,explorer.exe,*,*,1
+s5,*,iexplore.exe,*,taskhost.exe,*,*,1
+s5,*,iexplore.exe,*,conhost.exe,*,*,1
+s5,*,iexplore.exe,*,dllhost.exe,*,*,1
+s5,*,iexplore.exe,*,spoolsv.exe,*,*,1
+s5,*,iexplore.exe,*,lsass.exe,*,*,1
+s5,*,iexplore.exe,*,lsm.exe,*,*,1
