@@ -3,3 +3,5 @@ s1,babyshark,detections from babyshark,https://unit42.paloaltonetworks.com/new-b
 s2,wannacry,wannacry detections,https://www.endgame.com/blog/technical-blog/wcrywanacry-ransomware-technical-analysis
 s3,dridex,dridex detections,https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/
 s4,conficker,conficker detections,https://www.hybrid-analysis.com
+s5,ramnit,ramnit detections,https://www.hybrid-analysis.com/sample/54282ec29d4993ed6e9972122cfbb70bba4898a21d527bd9e72a166d7ec2fdc0/?environmentId=110
+s6,ramnit,more ramnit detections,https://www.cybereason.com/blog/banking-trojan-delivered-by-lolbins-ramnit-trojan
