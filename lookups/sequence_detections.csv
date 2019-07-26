@@ -40,3 +40,11 @@ s5,*,iexplore.exe,*,dllhost.exe,*,*,1
 s5,*,iexplore.exe,*,spoolsv.exe,*,*,1
 s5,*,iexplore.exe,*,lsass.exe,*,*,1
 s5,*,iexplore.exe,*,lsm.exe,*,*,1
+s6,*,*,*,del.exe,*,*,1
+s6,*,*,*,cmd.exe,*,*,1
+s6,*,*,*,certutil.exe,*,*,1
+s6,*,*,*,del.exe,*,*,1
+s6,*,*,*,bitsadmin.exe,*,*,1
+s6,*,wscript.exe,*,powershell.exe,*,*,1
+s6,*,taskeng.exe,*,wscript.exe,*,*,1
+s6,*,wmiprvse.exe,*,*,*,*,1
