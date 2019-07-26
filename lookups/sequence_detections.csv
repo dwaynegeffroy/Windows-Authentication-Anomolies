@@ -48,3 +48,10 @@ s6,*,*,*,bitsadmin.exe,*,*,1
 s6,*,wscript.exe,*,powershell.exe,*,*,1
 s6,*,taskeng.exe,*,wscript.exe,*,*,1
 s6,*,wmiprvse.exe,*,*,*,*,1
+s7,*,*,%TEMP%\server.exe,*,*,*,1
+s7,*,*,%TEMP%\svchost.exe,*,*,*,1
+s7,*,*,%TEMP%\svhost.exe,*,*,*,1
+s7,*,*,%APPDATA%\google.exe,*,*,*,1
+s7,*,*,%TEMP%\system.exe,*,*,*,1
+s7,*,*,%TEMP%\win32.exe,*,*,*,1
+s7,*,*,*,netsh.exe,*,*,1
