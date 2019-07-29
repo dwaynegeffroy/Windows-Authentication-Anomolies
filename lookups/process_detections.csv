@@ -760,3 +760,20 @@ apt1,*,*,*,*,net group "exchange servers" /domain>>*,*,med,1
 apt1,*,*,*,*,net group "domain computers" /domain>>*,*,med,1
 apt1,*,*,*,*,del %0*,*,med,1
 apt1,*,*,*,*,del *.vbs*,*,med,1
+apt12,*,*,*,*,winhlps.exe*,*,med,1
+apt12,*,*,*,*,acrotry.exe*,*,med,1
+apt12,*,*,*,*,AcroRd32.exe*,*,med,1
+apt12,*,*,*,*,winhlps.exe*,*,med,1
+apt12,*,*,*,*,del.exe*,*,med,1
+apt12,*,*,*,*,disk.exe*,*,med,1
+apt12,*,*,*,*,dos.exe*,*,med,1
+apt12,*,*,*,*,get.exe*,*,med,1
+apt12,*,*,*,*,list.exe*,*,med,1
+apt12,*,*,*,*,ls.exe*,*,med,1
+apt12,*,*,*,*,kill.exe*,*,med,1
+apt12,*,*,*,*,put.exe*,*,med,1
+apt12,*,*,*,*,rsh.exe*,*,med,1
+apt12,*,*,*,*,run.exe*,*,med,1
+apt12,*,*,*,*,sh.exe*,*,med,1
+apt12,*,*,*,*,sleep.exe*,*,med,1
+apt12,*,*,*,*,put.exe*,*,med,1
