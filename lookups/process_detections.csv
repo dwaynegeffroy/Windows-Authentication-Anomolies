@@ -777,3 +777,5 @@ apt12,*,*,*,*,run.exe*,*,med,1
 apt12,*,*,*,*,sh.exe*,*,med,1
 apt12,*,*,*,*,sleep.exe*,*,med,1
 apt12,*,*,*,*,put.exe*,*,med,1
+apt16,*,*,*,*,AcroRd32info.exe.exe*,*,med,1
+apt16,*,*,*,*,igfchk*.exe*,*,med,1
