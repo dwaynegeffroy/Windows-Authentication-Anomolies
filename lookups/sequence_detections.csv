@@ -55,3 +55,6 @@ s7,*,*,%APPDATA%\google.exe,*,*,*,1
 s7,*,*,%TEMP%\system.exe,*,*,*,1
 s7,*,*,%TEMP%\win32.exe,*,*,*,1
 s7,*,*,*,netsh.exe,*,*,1
+s8,*,*,*,keygen.exe,*,*,1
+s8,*,*,*,7za.exe,*,*,1
+s8,*,*,*,InstallFlashPlayer.exe,*,*,1
