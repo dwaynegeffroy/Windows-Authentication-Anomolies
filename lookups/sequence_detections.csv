@@ -58,3 +58,5 @@ s7,*,*,*,netsh.exe,*,*,1
 s8,*,*,*,keygen.exe,*,*,1
 s8,*,*,*,7za.exe,*,*,1
 s8,*,*,*,InstallFlashPlayer.exe,*,*,1
+s9,*,*,*,googleupdaterr.exe,*,*,1
+s9,*,googleupdaterr.exe,*,explorer.exe,*,*,1
