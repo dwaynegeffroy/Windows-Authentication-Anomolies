@@ -60,3 +60,8 @@ s8,*,*,*,7za.exe,*,*,1
 s8,*,*,*,InstallFlashPlayer.exe,*,*,1
 s9,*,*,*,googleupdaterr.exe,*,*,1
 s9,*,googleupdaterr.exe,*,explorer.exe,*,*,1
+s10,*,winver.exe,*,explorer.exe,*,*,1
+s10,*,explorer.exe,*,winver.exe,*,*,0
+s10,*,cmd.exe,*,winver.exe,*,*,0
+s10,*,powershell.exe,*,winver.exe,*,*,0
+s10,*,*,*,winver.exe,*,*,1
