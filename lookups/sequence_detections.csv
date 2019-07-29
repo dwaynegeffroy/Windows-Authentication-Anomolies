@@ -65,3 +65,63 @@ s10,*,explorer.exe,*,winver.exe,*,*,0
 s10,*,cmd.exe,*,winver.exe,*,*,0
 s10,*,powershell.exe,*,winver.exe,*,*,0
 s10,*,*,*,winver.exe,*,*,1
+admin@338,*,*,*,*,net user >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,net user /domain >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,dir c:\ >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,dir "c:\Documents and Settings" >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,dir "c:\Program Files\" >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,dir d:\ >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,ren "%temp%\upload" audiodg.exe*,*,med,1
+admin@338,*,*,*,*,net localgroup administrator >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,ver >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,systeminfo >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,ipconfig /all >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,netstat -ano >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,net start >> %temp%\download*,*,med,1
+admin@338,*,*,*,*,start %temp%\audiodg.exe*,*,med,1
+admin@338,*,*,*,*,del %0*,*,med,1
+admin@338,*,*,*,*,*upload.bat*,*,med,1
+apt1,*,*,*,*,net localgroup*,*,med,1
+apt1,*,*,*,*,net group*,*,med,1
+apt1,*,*,*,*,net user*,*,med,1
+apt1,*,*,*,AcroRD32.exe,*,*,med,1
+apt1,*,*,*,*,tasklist /v*,*,med,1
+apt1,*,*,*,*,ipconfig /all*,*,med,1
+apt1,*,*,*,*,net use*,*,med,1
+apt1,*,*,*,*,net start*,*,med,1
+apt1,*,*,*,*,ipconfig /all>>*,*,med,1
+apt1,*,*,*,*,net start>>*,*,med,1
+apt1,*,*,*,*,tasklist /v>>*,*,med,1
+apt1,*,*,*,*,net user >>*,*,med,1
+apt1,*,*,*,*,net localgroup administrators>>*,*,med,1
+apt1,*,*,*,*,netstat -ano>>*,*,med,1
+apt1,*,*,*,*,net view>>*,*,med,1
+apt1,*,*,*,*,net view /domain>>*,*,med,1
+apt1,*,*,*,*,net group /domain>>*,*,med,1
+apt1,*,*,*,*,net group "domain users" /domain>>*,*,med,1
+apt1,*,*,*,*,net group "domain admins" /domain>>*,*,med,1
+apt1,*,*,*,*,net group "domain controllers" /domain>>*,*,med,1
+apt1,*,*,*,*,net group 'exchange domain servers" /domain>>*,*,med,1
+apt1,*,*,*,*,net group "exchange servers" /domain>>*,*,med,1
+apt1,*,*,*,*,net group "domain computers" /domain>>*,*,med,1
+apt1,*,*,*,*,del %0*,*,med,1
+apt1,*,*,*,*,del *.vbs*,*,med,1
+apt12,*,*,*,*,winhlps.exe*,*,med,1
+apt12,*,*,*,*,acrotry.exe*,*,med,1
+apt12,*,*,*,*,AcroRd32.exe*,*,med,1
+apt12,*,*,*,*,winhlps.exe*,*,med,1
+apt12,*,*,*,*,del.exe*,*,med,1
+apt12,*,*,*,*,disk.exe*,*,med,1
+apt12,*,*,*,*,dos.exe*,*,med,1
+apt12,*,*,*,*,get.exe*,*,med,1
+apt12,*,*,*,*,list.exe*,*,med,1
+apt12,*,*,*,*,ls.exe*,*,med,1
+apt12,*,*,*,*,kill.exe*,*,med,1
+apt12,*,*,*,*,put.exe*,*,med,1
+apt12,*,*,*,*,rsh.exe*,*,med,1
+apt12,*,*,*,*,run.exe*,*,med,1
+apt12,*,*,*,*,sh.exe*,*,med,1
+apt12,*,*,*,*,sleep.exe*,*,med,1
+apt12,*,*,*,*,put.exe*,*,med,1
+apt16,*,*,*,*,AcroRd32info.exe.exe*,*,med,1
+apt16,*,*,*,*,igfchk*.exe*,*,med,1
