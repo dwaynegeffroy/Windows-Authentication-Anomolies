@@ -708,6 +708,8 @@ analytic_id,parent_process_path,parent_process_name,process_path,process_name,pr
 54,*,*,*,wininit.exe,*,*,med,1
 54,*,iexplore.exe,*,iexplore.exe,*,*,med,0
 54,*,explorer.exe,*,iexplore.exe,*,*,med,0
+54,*,svchost.exe,*,iexplore.exe,*,*,med,3
+54,*,outlook.exe,*,iexplore.exe,*,*,med,3
 54,*,*,*,iexplore.exe,*,*,med,1
 54,*,userinit.exe,*,explorer.exe,*,*,med,0
 54,*,*,*,explorer.exe,*,*,med,1
