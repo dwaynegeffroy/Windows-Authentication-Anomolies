@@ -52,3 +52,4 @@ analytic_id,title,description,attack_technique,attack_tactic,alert_quality,refer
 51,babyshark,babyshark,T1012,Discovery,med,https://unit42.paloaltonetworks.com/new-babyshark-malware-targets-u-s-national-security-think-tanks/
 52,Hiding files with attrib.exe,Hiding files with attrib.exe,T1158,"Defense Evasion, Persistence",med,
 53,Executables Started in Suspicious Folder,Executables Started in Suspicious Folder,T1036,Defense Evasion,med,
+54,sans find evil,sans find evil,,,med,https://digital-forensics.sans.org/media/SANS_Poster_2018_Hunt_Evil_FINAL.pdf
