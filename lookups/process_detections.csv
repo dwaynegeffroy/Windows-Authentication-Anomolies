@@ -720,3 +720,4 @@ analytic_id,parent_process_path,parent_process_name,process_path,process_name,pr
 54,*,svchost.exe,*,RuntimeBroker.exe,*,*,med,0
 54,*,*,*,RuntimeBroker.exe,*,*,med,1
 55,*,lsass.exe,*,*,*,*,med,1
+56,*,*,*,msiexec.exe,*http*://*,*,med,1
