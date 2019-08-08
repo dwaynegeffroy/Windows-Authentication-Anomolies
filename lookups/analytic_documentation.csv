@@ -53,3 +53,5 @@ analytic_id,title,description,attack_technique,attack_tactic,alert_quality,refer
 52,Hiding files with attrib.exe,Hiding files with attrib.exe,T1158,"Defense Evasion, Persistence",med,
 53,Executables Started in Suspicious Folder,Executables Started in Suspicious Folder,T1036,Defense Evasion,med,
 54,sans find evil,sans find evil,,,med,https://digital-forensics.sans.org/media/SANS_Poster_2018_Hunt_Evil_FINAL.pdf
+55,lsass as parent,lsass as parent,,,med,https://redcanary.com/blog/lsass-behaving-badly/
+56,msiexec install from web,msiexec install from web,,,med,https://redcanary.com/blog/lsass-behaving-badly/
