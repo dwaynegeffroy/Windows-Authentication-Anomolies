@@ -31,7 +31,7 @@ analytic_id,parent_process_path,parent_process_name,process_path,process_name,pr
 3,*,*,*,powershell.exe,*add*,*,med,30
 3,*,*,*,powershell.exe,*-EncodedCommand**,*,med,30
 3,*,*,*,powershell.exe,*-enc*,*,med,30
-4,*,*,*,schtasks.exe,*,*,low,10
+4,*,*,*,schtasks.exe,*create*,*,low,10
 5,*,*,*,schtasks.exe,*delete*,*,med,30
 6,*,*,*,InstallUtil.exe,*,*,low,10
 7,*users*,*,*,svchost.exe,*,*,high,60
