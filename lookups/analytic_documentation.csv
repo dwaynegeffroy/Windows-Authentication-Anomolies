@@ -55,3 +55,5 @@ analytic_id,title,description,attack_technique,attack_tactic,alert_quality,refer
 54,sans find evil,sans find evil,,,med,https://digital-forensics.sans.org/media/SANS_Poster_2018_Hunt_Evil_FINAL.pdf
 55,lsass as parent,lsass as parent,,,med,https://redcanary.com/blog/lsass-behaving-badly/
 56,msiexec install from web,msiexec install from web,,,med,https://redcanary.com/blog/lsass-behaving-badly/
+57,execution from cdrom mount,execution from cdrom mount,,,med,https://redcanary.com/blog/defense-evasion-and-phishing-emails/
+58,execution of iso file,execution of iso file,,,med,https://redcanary.com/blog/defense-evasion-and-phishing-emails/
