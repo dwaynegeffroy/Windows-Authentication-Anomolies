@@ -57,3 +57,4 @@ analytic_id,title,description,attack_technique,attack_tactic,alert_quality,refer
 56,msiexec install from web,msiexec install from web,,,med,https://redcanary.com/blog/lsass-behaving-badly/
 57,execution from cdrom mount,execution from cdrom mount,,,med,https://redcanary.com/blog/defense-evasion-and-phishing-emails/
 58,execution of iso file,execution of iso file,,,med,https://redcanary.com/blog/defense-evasion-and-phishing-emails/
+59,svchost starting without correct parameter,svchost starting without correct parameter,,,med,https://redcanary.com/blog/spearphishing-documents-with-executables/
