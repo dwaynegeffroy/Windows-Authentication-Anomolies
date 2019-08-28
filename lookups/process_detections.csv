@@ -737,3 +737,13 @@ analytic_id,parent_process_path,parent_process_name,process_path,process_name,pr
 58,*,*,*,*,*iso*,*,med,1
 59,*,*,*,svchost.exe,*svchost* -k*,*,med,0
 59,*,*,*,svchost.exe,*,*,med,1
+60,*,*,*,whosthere.exe,*,*,med,1
+60,*,*,*,whosthere-alt.exe,*,*,med,1
+60,*,*,*,iam.exe,*,*,med,1
+60,*,*,*,iam-alt.exe,*,*,med,1
+60,*,*,*,msvctl.exe,*,*,med,1
+60,*,*,*,gsecdump.exe,*,*,med,1
+60,*,*,*,pwdump7.exe,*,*,med,1
+60,*,*,*,genhash.exe,*,*,med,1
+60,*,*,*,wce.exe,*,*,med,1
+60,*,*,*,getlsasrvaddr.exe,*,*,med,1
