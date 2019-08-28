@@ -747,3 +747,12 @@ analytic_id,parent_process_path,parent_process_name,process_path,process_name,pr
 60,*,*,*,genhash.exe,*,*,med,1
 60,*,*,*,wce.exe,*,*,med,1
 60,*,*,*,getlsasrvaddr.exe,*,*,med,1
+60,*,*,*,mimikatz.exe,*,*,med,1
+60,*,*,*,*.exe,*lsadump::*,*,med,1
+60,*,*,*,*.exe,*vault::*,*,med,1
+60,*,*,*,*.exe,*token::*,*,med,1
+60,*,*,*,*.exe,*crypto::*,*,med,1
+60,*,*,*,*.exe,*kerberos::*,*,med,1
+60,*,*,*,*.exe,*sekurlsa::*,*,med,1
+60,*,*,*,*.exe,*privilege::*,*,med,1
+60,*,*,*,*.exe,*wdigest*,*,med,1
