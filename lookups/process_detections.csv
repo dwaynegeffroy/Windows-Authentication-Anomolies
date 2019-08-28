@@ -755,4 +755,5 @@ analytic_id,parent_process_path,parent_process_name,process_path,process_name,pr
 60,*,*,*,*.exe,*kerberos::*,*,med,1
 60,*,*,*,*.exe,*sekurlsa::*,*,med,1
 60,*,*,*,*.exe,*privilege::*,*,med,1
-60,*,*,*,*.exe,*wdigest*,*,med,1
+60,*,*,*,*,*wdigest*,*,med,1
+60,*,*,*,*,*ntds.dit*,*,med,1
